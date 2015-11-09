@@ -34,13 +34,15 @@
   },
   "homepage": "https://github.com/akiran/react-foundation-apps",
   "devDependencies": {
-    "autoprefixer-core": "^6.0.1",
+    "autoprefixer": "^6.1.0",
     "babel": "^6.0.15",
     "babel-cli": "^6.1.2",
     "babel-core": "^6.1.2",
     "babel-loader": "^6.0.1",
     "babel-preset-es2015": "^6.1.2",
     "babel-preset-react": "^6.1.2",
+    "babel-preset-stage-0": "^6.1.2",
+    "babel-runtime": "^6.0.14",
     "css-loader": "^0.22.0",
     "del": "^2.0.2",
     "escape-loader": "*",
@@ -55,7 +57,7 @@
     "postcss-loader": "^0.7.0",
     "raw-loader": "^0.5.1",
     "react": "*",
-    "react-highlight": "git+https://github.com/akiran/react-highlight.git",
+    "react-highlight": "^0.5.1",
     "react-hot-loader": "^1.2.3",
     "react-layer-mixin": "*",
     "react-responsive-mixin": "^0.3.*",
@@ -73,12 +75,17 @@
   },
   "dependencies": {
     "can-use-dom": "^0.1.0",
+    "classnames": "^2.2.0",
+    "fbjs": "^0.4.0",
     "object-assign": "*",
     "pubsub-js": "^1.5.0",
     "tether": "^1.1.1"
   },
   "babel": {
-    "presets": ["es2015", "react"]
+    "presets": [
+      "es2015",
+      "react"
+    ]
   },
   "browserify": {
     "transform": [

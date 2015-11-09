@@ -1,5 +1,5 @@
 var React = require('react');
-var cx = require('react/lib/cx');
+var cx = require('classnames');
 var Animation = require('../utils/animation');
 var foundationApi = require('../utils/foundation-api');
 
@@ -8,7 +8,7 @@ var Modal = React.createClass({
     return { open: false };
   },
   getDefaultProps: function () {
-    return { 
+    return {
       overlay: true,
       overlayClose: true,
       animationIn: 'fadeIn',
@@ -32,7 +32,7 @@ var Modal = React.createClass({
   hideOverlay: function (e) {
     e.preventDefault();
     if (this.props.overlayClose) {
-      this.setState({open: false});   
+      this.setState({open: false});
     }
   },
   stopClickPropagation: function (e) {

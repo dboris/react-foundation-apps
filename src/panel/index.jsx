@@ -1,5 +1,5 @@
 var React = require('react');
-var cx = require('react/lib/cx');
+var cx = require('classnames');
 var Animation = require('../utils/animation');
 var foundationApi = require('../utils/foundation-api');
 
@@ -31,7 +31,7 @@ var Panel = React.createClass({
     var classes = 'panel panel-' + this.props.position;
     if (this.props.className) {
       classes += ' ' + this.props.className;
-    } 
+    }
     if(this.props.position === 'left') {
       animationIn  = this.props.animationIn || 'slideInRight';
       animationOut = this.props.animationOut || 'slideOutLeft';

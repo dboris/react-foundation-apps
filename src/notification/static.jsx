@@ -1,5 +1,5 @@
 var React = require('react');
-var cx = require('react/lib/cx');
+var cx = require('classnames');
 var foundationApi = require('../utils/foundation-api');
 var Animation = require('../utils/animation');
 var Notification = require('./notification');
@@ -15,7 +15,7 @@ var NotificationStatic = React.createClass({
       } else if (msg === 'close') {
         this.setState({open: false});
       }
-    }.bind(this)); 
+    }.bind(this));
   },
   componentWillUnmount: function () {
     foundationApi.unsubscribe(this.props.id);

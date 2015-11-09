@@ -1,5 +1,5 @@
 var React = require('react');
-var ExecutionEnvironment = require('react/lib/ExecutionEnvironment');
+var ExecutionEnvironment = require('fbjs/lib/ExecutionEnvironment');
 var IconicJs = ExecutionEnvironment.canUseDOM && require('../../vendor/iconic.min');
 var cloneWithProps = require('react/lib/cloneWithProps');
 
